@@ -1,0 +1,112 @@
+body {
+  background: url("grey.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: rgb(33, 26, 11);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  border-radius: 50rem;
+  color: #ffe3e3;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+h1 { background-color: #000; }
+h2 { background-color: #6c6f7d; }
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+  color: #8f4e8b;
+  background-color: #ffe3e3;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  font: bold 1.5rem Georgia, 'Times New Roman', serif;
+  background-color: rgb(172, 54, 115);
+  padding: 1rem 0;
+  margin-top: 2.5rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.container {
+  padding: 0; /* Remove padding if necessary */
+  margin: 0; /* Remove margin if necessary */
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 15rem;
+  background-color: #000; 
+  
+}
+
+
+.post {
+  font: bold 1.2rem "Franklin Gothic Medium", Arial, sans-serif;
+  text-align: end;
+}
+
+.container img {
+  width: 100%;
+  max-width: 15rem;
+  height: auto;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.684);
+  transition: all 0.5s ease-in-out;
+}
+
+.comment-section {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+input, textarea, button {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover { background-color: #0056b3; }
+
+#commentsContainer {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  h1, h2, h3 { font-size: 1.5rem; }
+  .post { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+  .navbar { font-size: 1rem; padding: 0.5rem 0; }
+  h1, h2, h3 { font-size: 1.2rem; margin: 1rem; }
+  .post { font-size: 0.9rem; }
+  #logo { max-width: 7rem; padding: 0.5rem; }
+}
